@@ -847,7 +847,31 @@
               <button type="button" class="btn btn-success">
                 СТАТУС <span class="badge badge-light">Разблокирован</span>
               </button>
-              <button type="submit" class="btn btn-primary">Блокировать</button>
+
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" id="exampleModalCenterTitle">внимание!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Действия по блокировке будут применены в базе данных портала. Подтвердите действие
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">НЕ ВЫПОЛНЯТЬ</button>
+                        <button type="button" class="btn btn-primary">ВЫПОЛНИТЬ ДЕЙСТВИЕ</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <button type="button" class="btn btn-success text-uppercase" data-toggle="modal" data-target="#exampleModalCenter2">БЛОКИРОВАТЬ SIM</button>
+
+              <!-- <button type="submit" class="btn btn-primary">Блокировать</button> -->
             </div>
             <!-- /.box-header -->
             <div class="box-body">
